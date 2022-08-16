@@ -12,6 +12,9 @@
   pointer-events: none;
   opacity: 0.4;
 }
+.mr-10{
+  margin-right: 10px;
+}
 .d-flex{
   display: flex;
 }

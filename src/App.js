@@ -27,7 +27,11 @@ function App() {
       setQuickQr(url)
     })
   }
-
+const clearAll = () => {
+  setUrl('');
+  setQuickQr('')
+  setColor('#18978f')
+}
   return (
     <>
       <div className='nav'>
@@ -67,7 +71,8 @@ function App() {
 
           </div>
           <div className='d-flex m-20'>
-          <button onClick={GenerateQRCode} className={`${!url ? 'btn-disable' : ''}`}>Generate</button>
+          <button onClick={GenerateQRCode} className={`mr-10 ${!url ? 'btn-disable' : ''}`}>Generate</button>
+          <button onClick={clearAll} className={`${!url ? 'btn-disable' : ''}`}>Clear</button>
           </div>
         </div>
         <div className='right'>
