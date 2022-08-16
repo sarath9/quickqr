@@ -1,13 +1,125 @@
+:root {
+  --primary: #18978F;
+  --secondary: #ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.btn-disable{
+  pointer-events: none;
+  opacity: 0.4;
+}
+.d-flex{
+  display: flex;
+}
+.w-20{
+  width: 100px;
+}
+.m-20{
+  margin: 20px;
+}
+.container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.url{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary);
+}
+.form-main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+}
+.mb-5{
+  margin-bottom: 10px;
+}
+.left{
+  width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: calc(100vh - 50px);
+}
+.right{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+    justify-content: center;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	background-color: #F1F1F1;
+	color: #333;
+}
+.nav{
+  background-color: #54BAB9;
+height: 50px;
+}
+.cover{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.colorBox{
+  height: 39px;
+  width: 50px;
+  border:5px solid #fff;
+  cursor: pointer;
+}
+.popover{
+  position: absolute;
+  z-Index:2;
+}
+.nav .title{
+  color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    text-shadow: 2px 4px #18978f;
+}
+img {
+	display: block;
+	width: 480px;
+	height: 480px;
+	margin: 2rem auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+
+
+button, a {
+	appearance: none;
+	outline: none;
+	border: 1px solid #18978F;
+    border-radius: 4px;
+    padding: 5px 10px;
+	background: none;
+	cursor: pointer;
+	color: var(--primary);
+	font-size: 1.2rem;
+  width: 100%;
+	text-decoration: none;
+}
+button:hover, a:hover{
+  background-color: var(--primary);
+  color: #fff;
 }
