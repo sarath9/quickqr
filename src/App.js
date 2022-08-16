@@ -43,13 +43,13 @@ const clearAll = () => {
           <div className='d-flex m-20'>
             <form className='form-main'>
 <span className='mb-5'> Website URL</span>
-            <input type="text" className='url' placeholder="e.g. https://google.com"
+            <input type="text" className='url' placeholder="website URL"
               value={url}
               onChange={e => setUrl(e.target.value)} />
 </form>
 
           </div>
-          <div className='d-flex m-20'>
+          <div className='d-flex m-20 p-relative'>
           <form className='form-main'>
             <input type='number' className='url'  placeholder='Width and color for Download image' onChange={(e) => setCustomWidth(e.target.value)} />
             </form>

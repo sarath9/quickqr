@@ -126,3 +126,23 @@ button:hover, a:hover{
   background-color: var(--primary);
   color: #fff;
 }
+
+@media (max-width: 990px) { 
+  .container{
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+    height: auto;
+  }
+  .right img{
+    width: 300px;
+    height: 300px;
+  }
+  .colorBox{
+    width: 100%;
+  }
+  .p-relative{
+    flex-direction: column;
+  }
+}
